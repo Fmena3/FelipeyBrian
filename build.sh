@@ -6,3 +6,4 @@ pip install -r requirements.txt
 
 python manage.py collectstatic --no-input
 python manage.py migrate
+gunicorn PROY_TALLER_04.wsgi:application --log-level debug
